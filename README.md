@@ -14,22 +14,36 @@ Description:
 
 
 ### AC1 ###
-As a public user when I go to the homepage of the site I expect to see the duckduckgo logo on the page
+**Given** I am on the homepage
+**When** I look at the page
+**Then** I expect to see the duckduckgo logo on the page
 
 ### AC2 ###
-As a public user when I go to the homepage of the site and type "super" into the search box I expect to see exactly 10 suggestions in the typeahead dropdown
+**Given** I am on the homepage
+**When** I type "super" into the search box
+**Then** I expect to see exactly 10 suggestions in the typeahead dropdown
 
 ### AC3 ###
-As a public user when I go to the homepage of the site and I type "supercalafragalistic" into the search box I expect the first result to be "supercalafragalisticexpialadoshus"
+**Given** I am on the homepage
+**When** I type "supercalafragalistic" into the search box
+**Then** I expect the first result to be "supercalafragalisticexpialadoshus"
+
 
 ### AC4 ###
-As a public user when I click on the hamburger menu in the top right I expect to see a theme switcher
+**Given** I am on the homepage
+**When** I click on the hamburger menu in the top right
+**Then** I expect to see a theme switcher
 
 ### AC5 ###
-As a public user when I click on the hamburger menu in the top right and I click the dark mode theme button my page background should change colour
+ 
+**Given** I am on the homepage
+**When** When I click on the hamburger menu in the top right and I click the dark mode theme button
+**Then** My page background should change colour
 
 ### AC6 ###
-As a public user when I go to he homepage and type <see-below-test-data-table> then click the maginifying glass I should get 10 results on the results page
+**Given** I am on the homepage
+**When** I go to he homepage and type <see-below-test-data-table> then click the maginifying glass
+**Then** I should get 10 results on the results page
 
 Data:
 Back to the future
@@ -39,6 +53,20 @@ Short Circuit
 The Terminator
 Ferris Bueller's day off
 
+### AC7 ###
+**Given** I am on the homepage for the first time
+**When** I look at the page
+**Then** I see an element in the top right corner with a button that includes the text "Add DuckDuckGo to <current-browser>"
+
+### AC8 ###
+**Given** I am on the homepage for the first time
+**When** I click the dismiss button on the element in the top right corner with a button that includes the text "Add DuckDuckGo to <current-browser>"
+**Then** I see that the element is removed from view
+
+### AC9 ###
+**Given** I have refreshed the homepage after dismissing the element in the top right corner with a button that includes the text "Add DuckDuckGo to <current-browser>"
+**When** I look at the page
+**Then** I don't see an element in the top right corner with a button that includes the text "Add DuckDuckGo to <current-browser>"
 
 ## Deliverables: ##
 - Spend as little or as much time as you like on the challenge.
@@ -46,6 +74,3 @@ Ferris Bueller's day off
 - Include this readme in your solution and document setup instructions and pre-requisites to run your solution
 - The output of the efforts *must be committed back into a Public Repo in Github* and the URL shared back for review.
 - Using a BDD natural language solution  implementation would be preferred
-
-
-
