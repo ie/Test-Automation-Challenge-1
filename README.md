@@ -8,6 +8,7 @@ Description:
 
 - This practical challenge is to build browser based tests
 - The production version of the website we are trying to test is https://start.duckduckgo.com/
+- The traffic page url is https://start.duckduckgo.com/traffic
 - In this fictitious example you are the *automation tester* in the team
 - The business analyst has written the below acceptance criteria to be implemented
 - The developers have completed their work, you need to write automated tests to validate the application is working as intended 
@@ -49,6 +50,12 @@ Rocky IV
 Short Circuit  
 The Terminator  
 Ferris Bueller's day off  
+
+### AC7 ###
+**Given** I am on the traffic page
+**When** I click on the 2018 Traffic section
+**Then** I should see all the months listed in the order from Dec to Jan
+**And** The Total Direct Queries should be equal to the sum of all the total directs from each month
 
 ## Deliverables: ##
 - Spend as little or as much time as you like on the challenge.
