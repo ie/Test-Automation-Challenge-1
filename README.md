@@ -39,7 +39,7 @@ Description:
 
 ### AC6 ###
 **Given** I am on the homepage
-**When** I go to he homepage and type <see-below-test-data-table> then click the maginifying glass
+**When** I go to the homepage and type `<see-below-test-data-table>` then click the maginifying glass
 **Then** I should get 10 results on the results page
 
 **Data:**  
